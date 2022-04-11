@@ -1,0 +1,40 @@
+header
+    position fixed
+    top 0
+    left 0
+    right 0
+    padding-top 12px
+    padding-bottom 12px
+    margin auto
+    max-width $max-width
+    display: flex
+    justify-content: space-between
+    background-color $background-color
+    z-index 9999
+
+header
+    .title
+        font-size: 20px
+        font-family Consolas
+        display flex
+        align-items center
+
+        .site-icon
+            width 25px
+            height 25px
+            margin-right 10px
+
+
+nav
+    display: flex;
+    justify-content: space-around;
+
+nav a
+    margin-left 25px
+    font-size: $font-size;
+    text-align right
+
+
+nav a:last-child {
+    border: none;
+}

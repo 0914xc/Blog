@@ -1,0 +1,28 @@
+@charset "utf-8"
+
+$theme-color = unquote(hexo-config("theme-color"))
+$background-color = #161616
+$font-family = "Helvetica Neue",Helvetica,Arial,sans-serif
+$font-size = 16px
+$small-font-size = 14px
+$small-font-color = #b6b6b6
+
+$line-height = 1.6
+
+$max-width = 1000px
+$content-max-width = 800px
+
+@import "common/markdown.styl"
+@import "common/highlight.styl"
+@import "common/base.styl"
+
+@import "layout/header.styl"
+@import "layout/main.styl"
+@import "layout/footer.styl"
+
+@import "pages/index.styl"
+@import "pages/archive.styl"
+@import "pages/category.styl"
+@import "pages/tag.styl"
+@import "pages/post.styl"
+@import "pages/page.styl"

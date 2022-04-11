@@ -1,0 +1,21 @@
+footer
+    padding-top 40px
+    padding-bottom 40px
+    display flex
+    justify-content center
+
+    span
+        font-size $small-font-size
+
+        &:after
+            content '，'
+
+        &:last-child
+            &:after
+                content ''
+
+        a
+            border-bottom 1px solid white
+
+            &:hover
+                border-color $theme-color

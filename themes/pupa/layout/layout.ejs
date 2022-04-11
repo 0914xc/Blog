@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <title><%= config.title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no"/>
+    <meta name="keywords" content="<%= config.keywords %>">
+    <meta name="description" content="<%= config.description %>"/>
+    <meta name="baidu-site-verification" content="code-VnkhRNsu6k"/>
+    <meta name="google-site-verification" content="Cwfsa2uD0jBt1mxROx4JgOogIOeP97hksOQ7dnUVhXU"/>
+    <%- meta_generator() %>
+    <%- favicon_tag(theme.favicon) %>
+    <%- css('/css/theme.css') %>
+</head>
+<body>
+<header>
+    <div class="title"><%- image_tag('images/cactus.png', {"class": "site-icon"}) %><%= config.title %></div>
+    <nav>
+        <% Object.keys(theme.menu).forEach(function(key) { %>
+            <a href="<%= theme.menu[key] %>"><%= _p(key) %></a>
+        <% }) %>
+    </nav>
+</header>
+<main>
+    <%- body %>
+</main>
+<footer>
+    <span>站点托管于<a href="https://github.com/0914xc/0914xc.github.io">GitHub</a></span>
+    <span>由 <a href="https://hexo.io/zh-cn/">Hexo</a>强力驱动</span>
+    <span>目前总计<a href="#"><%- totalcount(site) %></a>字</span>
+    <span><%= theme.icp %></span>
+</footer>
+<%- js('https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js') %>
+<%- js('/js/theme.js') %>
+</body>
+</html>
