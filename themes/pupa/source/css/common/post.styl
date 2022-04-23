@@ -1,0 +1,61 @@
+.post-content
+    margin-top 20px
+    margin-bottom 20px
+
+.post-intro
+    display flex
+    font-size $sub-font-size
+    color $sub-font-color
+
+    a
+        font-size $sub-font-size
+        color $sub-font-color
+        margin-right 4px
+
+    & > div
+        display flex
+        align-items center
+        margin-right 20px
+
+        & > svg
+            margin-right 5px
+
+    .post-categories
+        & > a
+            border-bottom 1px dashed $sub-font-color
+
+.post-toc
+    position fixed
+    top min(100px, 20%)
+    right 100px
+    width 200px
+    font-size $sub-font-size
+
+    a
+        color $sub-font-color
+
+        &:hover
+            color $main-color
+
+    ul, ol, li
+        list-style none
+
+    ol
+        padding-left 20px
+
+    span
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden
+        line-height 2.0
+
+    .highlight
+        color $main-color
+
+
+/** 描点定位向下偏移 */
+h1, h2, h3, h4, h5, h6
+    &:target
+        padding-top 70px
+        margin-top -70px
+
