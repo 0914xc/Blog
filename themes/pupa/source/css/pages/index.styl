@@ -1,60 +1,20 @@
-$index-post-intro-font-size = 12px
-$index-post-intro-color = #b6b6b6
-
-#index
-    margin auto
-    max-width $content-max-width
-
-    .post
+.index
+    .post-item
         padding-top 20px
         padding-bottom 20px
         border-bottom 1px solid #333
 
-        .title
+        .post-title
             &:before
-                padding-right 0
                 content ''
+                padding-right 0
 
-        .content
-            padding-bottom 20px
+.pagination
+    margin-top 40px
+    margin-bottom 40px
+    display flex
+    justify-content space-between
 
-        .intro
-            display flex
-            justify-content left
-            font-size $index-post-intro-font-size
-            color $index-post-intro-color
-
-            div
-                display flex
-                align-items center
-                margin-right 20px
-
-                svg
-                    margin-right 5px
-
-                a
-                    margin-right 4px
-                    color $index-post-intro-color
-
-                    &:hover
-                        color $theme-color
-
-            .categories a
-                border-bottom 1px dashed $index-post-intro-color
-
-                &:hover
-                    border-color $theme-color
-
-            .tags a
-                &:before
-                    content '#'
-
-    .pagination
-        margin-top 40px
-        margin-bottom 40px
-        display flex
-        justify-content space-between
-
-        a
-            font-size $small-font-size
-            display inline-block
+    a
+        font-size $sub-font-size
+        display inline-block

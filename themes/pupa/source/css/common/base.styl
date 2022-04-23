@@ -3,17 +3,16 @@
 }
 
 html
-    background-color $background-color
-    font-family $font-family
+    font-family "Helvetica Neue", Helvetica, Arial, sans-serif
     font-size $font-size
-    line-height $line-height
+    line-height 1.6
+    -webkit-text-size-adjust 100%
     letter-spacing 1px
     word-break break-all
 
 body
-    margin auto
-    max-width $max-width
-    color: white
+    color: var(--font-color)
+    background-color var(--page-color)
 
 a
     text-decoration none
@@ -22,5 +21,9 @@ a
     color white
 
     &:hover
-        color $theme-color
+        color $main-color
 
+main
+footer
+    margin auto
+    max-width 1000px

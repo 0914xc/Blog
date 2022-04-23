@@ -1,4 +1,4 @@
-<div id="tag">
+<div class="container">
     <% let result = site.tags.findOne({name: page.tag}) %>
     <blockquote><p>此标签下共计<%= result.posts.length %>篇文章</p></blockquote>
     <h3><%= page.tag%></h3>

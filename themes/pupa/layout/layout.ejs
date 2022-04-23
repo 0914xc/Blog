@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-Hans">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <title><%= config.title %></title>
@@ -10,25 +10,17 @@
     <meta name="google-site-verification" content="Cwfsa2uD0jBt1mxROx4JgOogIOeP97hksOQ7dnUVhXU"/>
     <%- meta_generator() %>
     <%- favicon_tag(theme.favicon) %>
-    <%- css('/css/theme.css') %>
+    <%- css('/css/theme') %>
 </head>
-<body>
+<body data-theme="dark">
 <header>
-    <div class="title"><%- image_tag('images/cactus.png', {"class": "site-icon"}) %><%= config.title %></div>
-    <nav>
-        <% Object.keys(theme.menu).forEach(function(key) { %>
-            <a href="<%= theme.menu[key] %>"><%= _p(key) %></a>
-        <% }) %>
-    </nav>
+    <%- partial('partial/header') %>
 </header>
 <main>
     <%- body %>
 </main>
 <footer>
-    <span>站点托管于<a href="https://github.com/0914xc/0914xc.github.io">GitHub</a></span>
-    <span>由 <a href="https://hexo.io/zh-cn/">Hexo</a>强力驱动</span>
-    <span>目前总计<a href="#"><%- totalcount(site) %></a>字</span>
-    <span><%= theme.icp %></span>
+    <%- partial('partial/footer')%>
 </footer>
 <%- js('https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js') %>
 <%- js('/js/theme.js') %>

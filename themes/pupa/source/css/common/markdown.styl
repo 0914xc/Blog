@@ -1,45 +1,49 @@
-h1:before, h2:before, h3:before, h4:before, h5:before, h6:before
+h1&:before
+h2&:before
+h3&:before
+h4&:before
+h5&:before
+h6&:before
     display inline-block
     padding-right 8px
     content "#"
-    color $theme-color
+    color $main-color
 
 blockquote
-    padding: 1px 20px
-    margin: 22px 0
-    color: white
-    background-color: #292a2d
-    border-left: 4px solid $theme-color
+    padding 1px 20px
+    margin 22px 0
+    color white
+    background-color #292a2d
+    border-left 4px solid $main-color
 
 strong
-    color $theme-color
-
-ul li, ol li
-    margin 16px 0
-    line-height 1.6
+    color $main-color
 
 img
     max-width 100%
 
-.katex
-    font-size 1rem
-    text-indent 0
-    text-rendering auto
-
 table
-    table-layout auto
+    margin 20px 0
     width 100%
-    margin 22px 0
-    line-height 1.6
-    text-align left
     border-collapse collapse
     border-spacing 0
-    border 1px solid #ececec
+    border 1px solid var(--border-color)
+    table-layout fixed
+    word-wrap break-all
+    vertical-align baseline
 
-    td, th
-        padding: 8px 6px
-        border-bottom: 1px solid #ececec
-        border-right: 1px solid #ececec
+th
+    font-weight 600
+
+td
+    border-bottom-width 1px
+
+td, th
+    border-bottom 1px solid var(--border-color)
+    border-right 1px solid var(--border-color)
+
+li
+    line-height 2.5
 
 .video-container
     margin auto
@@ -50,3 +54,8 @@ table
     width 100%
     height 100%
     object-fit fill
+
+.katex
+    font-size 1rem
+    text-indent 0
+    text-rendering auto
