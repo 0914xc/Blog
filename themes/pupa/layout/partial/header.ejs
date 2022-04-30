@@ -1,8 +1,0 @@
-<div class="container">
-    <div class="title"><%- image_tag('images/cactus.png', {"class": "site-icon"}) %><%= config.title %></div>
-    <nav>
-        <% Object.keys(theme.menu).forEach(function(key) { %>
-            <a href="<%= theme.menu[key] %>"><%= _p(key) %></a>
-        <% }) %>
-    </nav>
-</div>
