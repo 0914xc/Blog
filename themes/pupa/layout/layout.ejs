@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title><%= config.title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no"/>
+    <meta name="keywords" content="<%= config.keywords %>">
+    <meta name="description" content="<%= config.description %>"/>
+    <meta name="baidu-site-verification" content="code-VnkhRNsu6k"/>
+    <meta name="google-site-verification" content="Cwfsa2uD0jBt1mxROx4JgOogIOeP97hksOQ7dnUVhXU"/>
+    <%- meta_generator() %>
+    <%- favicon_tag(theme.favicon) %>
+    <%- css('/css/theme') %>
+</head>
+<body>
+<header>
+    <div class="title"><%- image_tag('images/cactus.png', {"class": "site-icon"}) %><%= config.title %></div>
+</header>
+<main>
+    <%- body %>
+</main>
+<footer>
+</footer>
+<%- js('https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js') %>
+<%- js('/js/theme.js') %>
+</body>
+</html>

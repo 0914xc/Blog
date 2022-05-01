@@ -1,0 +1,21 @@
+footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+footer span {
+    font-size: 14px;
+}
+footer span:after {
+    content: '，';
+}
+footer span:last-child:after {
+    content: '';
+}
+footer span a {
+    border-bottom: 1px solid #fff;
+}
+footer span a:hover {
+    border-color: var(--theme-color);
+}

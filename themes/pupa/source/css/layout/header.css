@@ -1,0 +1,15 @@
+header .title {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    padding: 9px 12px 6px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: Consolas;
+}
+header .title .site-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}

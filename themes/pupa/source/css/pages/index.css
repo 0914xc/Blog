@@ -1,0 +1,26 @@
+.index article {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f1f2f4;
+}
+
+.index article .title {
+    color: #333332;
+}
+
+
+.index aside {
+    position: fixed;
+    top: 130px;
+    width: 15%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.index aside img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.index aside span {
+    font-family: serif;
+}
