@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no"/>
     <meta name="keywords" content="<%= config.keywords %>">
     <meta name="description" content="<%= config.description %>"/>
-    <meta name="baidu-site-verification" content="code-VnkhRNsu6k"/>
-    <meta name="google-site-verification" content="Cwfsa2uD0jBt1mxROx4JgOogIOeP97hksOQ7dnUVhXU"/>
     <%- meta_generator() %>
     <%- favicon_tag(theme.favicon) %>
-    <%- css('/css/theme') %>
+    <%- css('/css/theme.css') %>
 </head>
 <body>
 <div class="background"></div>
@@ -46,8 +44,6 @@
         <span><%= theme.icp%></span>
     </footer>
 </div>
-
-<%- js('https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js') %>
 <%- js('/js/theme.js') %>
 </body>
 </html>
