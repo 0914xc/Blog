@@ -13,14 +13,40 @@
     <%- css('/css/theme') %>
 </head>
 <body>
-<header>
-    <div class="title"><%- image_tag('images/cactus.png', {"class": "site-icon"}) %><%= config.title %></div>
-</header>
-<main>
-    <%- body %>
-</main>
-<footer>
-</footer>
+<div class="background"></div>
+<div class="container">
+    <header>
+        <div class="header-background">
+            <div class="header-background-img">
+                <img src="https://cloud.snhere.cn/uploads/2022/04/20220407175255index-one07-1468.svg" alt="">
+            </div>
+            <div class="header-background-filter">
+                <div class="intro">
+                    <img src="https://avatars.githubusercontent.com/u/32607917?v=4" alt="" class="avatar">
+                    <section>
+                        <h1 class="site-title"><%= config.title %></h1>
+                        <div class="hitokoto">我们都是阴沟里的虫子，但总还是得有人仰望星空。</div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <% Object.keys(theme.menu).forEach(function(key) { %>
+                <a href="<%= theme.menu[key] %>"><%= _p(key) %></a>
+            <% }) %>
+        </nav>
+    </header>
+    <main>
+        <%- body %>
+    </main>
+    <footer>
+        <span>站点托管于<a href="https://github.com/0914xc/0914xc.github.io">GitHub</a></span>
+        <span>由 <a href="https://hexo.io/zh-cn/">Hexo</a>强力驱动</span>
+        <span>目前总计<a href="#"><%-totalcount(site) %></a>字</span>
+        <span><%= theme.icp%></span>
+    </footer>
+</div>
+
 <%- js('https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js') %>
 <%- js('/js/theme.js') %>
 </body>

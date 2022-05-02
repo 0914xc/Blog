@@ -1,5 +1,10 @@
+#导航栏
+menu:
+  Home: /
+  About: /about
+
 # 站点微缩图
-favicon: https://github.githubassets.com/images/icons/emoji/unicode/1f34b.png
+favicon: /images/cactus.png
 
 # 头像
 avator: https://cdn.jsdelivr.net/gh/wxc0914/image/a3625c26bc8735174100f6d487763b06.png

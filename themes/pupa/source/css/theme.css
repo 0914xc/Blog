@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 @import "common/base.css";
-@import "common/markdown.css";
 @import "common/article.css";
+@import "common/highlight.css";
 
 @import "layout/header.css";
 @import "layout/main.css";
@@ -13,6 +13,6 @@
 @import "pages/page.css";
 
 :root {
-    --theme-color: #3390ff;
+    --theme-color: tomato;
 }
 

@@ -4,10 +4,13 @@
             <% if (post.title.length === 0) {
                 post.title = "[文章没有标题]"
             } %>
-            <a class="title" href="<%- url_for(post.path) %>"><%= post.title %></a>
-            <div class="meta">
+            <a class="article-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+            <div class="article-content"><%- truncate(strip_html(post.content), {length: 150}) %></div>
+            <div class="article-meta">
+                <img src="/images/calendar.png" alt="">
                 <time><%- date(post.date, 'YYYY-MM-DD') %></time>
                 <% if (post.categories.length > 0) { %>
+                    <img src="/images/tags.png" alt="">
                     <div class="category">
                         <% post.categories.forEach(function (category) { %>
                             <span><%= category.name %></span>
@@ -17,10 +20,5 @@
             </div>
         </article>
     <% }) %>
-    <aside>
-        <img src="https://avatars.githubusercontent.com/u/32607917?v=4" alt="avatar">
-        <h3 class="author" >魏小宸</h3>
-        <span>一个程序猿，<a href="<%- url_for('/about') %>">了解更多。</a></span>
-    </aside>
 </div>
 
