@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no"/>
     <meta name="keywords" content="<%= config.keywords %>">
     <meta name="description" content="<%= config.description %>"/>
+    <!-- 引入谷歌字体-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
     <%- meta_generator() %>
     <%- favicon_tag(theme.favicon) %>
-    <%- css('/css/theme.css') %>
+    <%- css('/css/theme') %>
 </head>
 <body>
 <div class="background"></div>
@@ -16,14 +20,14 @@
     <header>
         <div class="header-background">
             <div class="header-background-img">
-                <img src="https://cloud.snhere.cn/uploads/2022/04/20220407175255index-one07-1468.svg" alt="">
+                <img src="<%= theme.backgroundUrl %>" alt="header-background-img">
             </div>
             <div class="header-background-filter">
                 <div class="intro">
-                    <img src="https://avatars.githubusercontent.com/u/32607917?v=4" alt="" class="avatar">
+                    <img src="<%= theme.avator %>" alt="avator" class="avator">
                     <section>
                         <h1 class="site-title"><%= config.title %></h1>
-                        <div class="hitokoto">我们都是阴沟里的虫子，但总还是得有人仰望星空。</div>
+                        <div class="hitokoto"><%= theme.hitokoto %></div>
                     </section>
                 </div>
             </div>
@@ -38,12 +42,25 @@
         <%- body %>
     </main>
     <footer>
-        <span>站点托管于<a href="https://github.com/0914xc/0914xc.github.io">GitHub</a></span>
-        <span>由 <a href="https://hexo.io/zh-cn/">Hexo</a>强力驱动</span>
-        <span>目前总计<a href="#"><%-totalcount(site) %></a>字</span>
-        <span><%= theme.icp%></span>
+        <% if (theme.utterances.enable === true && (is_post() || (is_page() && page.path === 'link/index.html'))) { %>
+            <script src="https://utteranc.es/client.js"
+                    repo="<%- theme.utterances.repo %>"
+                    issue-term="pathname"
+                    theme="<%- theme.utterances.theme %>"
+                    crossorigin="anonymous"
+                    async>
+            </script>
+        <% } %>
+        <div class="site-intro">
+            <span>站点托管于<a href="<%= theme.repo %>>">GitHub</a></span>
+            <span>由 <a href="https://hexo.io/zh-cn/">Hexo</a>强力驱动</span>
+            <span>目前总计<a href="#"><%- totalcount(site) %></a>字</span>
+            <span><%= theme.icp %></span>
+        </div>
     </footer>
 </div>
+
+<%- js('https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js') %>
 <%- js('/js/theme.js') %>
 </body>
 </html>

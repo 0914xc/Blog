@@ -1,0 +1,24 @@
+@charset "utf-8"
+
+@import "common/normalize.css";
+@import "common/base.css";
+@import "common/article.css";
+@import "common/highlight.css";
+@import "iconfont/iconfont.css";
+@import "common/pagination.css";
+
+@import "layout/header.css";
+@import "layout/main.css";
+@import "layout/footer.css";
+
+@import "pages/index.css";
+@import "pages/post.css";
+@import "pages/archive.css";
+@import "pages/page.css";
+@import "pages/link.css"
+
+:root {
+    --theme-color: unquote(hexo-config("themeColor"))
+    --body-background: url(unquote(hexo-config("backgroundUrl")))
+}
+

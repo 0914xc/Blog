@@ -6,10 +6,10 @@
         <h1 class="title"><%= page.title %></h1>
         <div class="article-meta-box">
             <div class="article-meta">
-                <img src="/images/calendar.png" alt="">
+                <i class="iconfont icon-calendar"></i>
                 <time><%- date(page.date, 'YYYY-MM-DD') %></time>
                 <% if (page.categories.length > 0) { %>
-                    <img src="/images/tags.png" alt="">
+                    <i class="iconfont icon-tag"></i>
                     <div class="category">
                         <% page.categories.forEach(function (category) { %>
                             <span><%= category.name %></span>
@@ -20,4 +20,18 @@
         </div>
     </div>
     <div class="article-content"><%- page.content %></div>
+    <div class="post-pagination">
+        <% if (page.prev != null) { %>
+            <a class="prev" href="<%- url_for(page.prev.path)%>">
+                <i class="iconfont icon-arrow-left"></i>
+                <span><%- page.prev.title %></span>
+            </a>
+        <% } %>
+        <% if (page.next != null) { %>
+            <a class="next" href="<%- url_for(page.next.path)%>">
+                <span><%- page.next.title %></span>
+                <i class="iconfont icon-arrow-right"></i>
+            </a>
+        <% } %>
+    </div>
 </article>

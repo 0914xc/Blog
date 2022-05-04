@@ -1,17 +1,18 @@
+article {
+    text-align: justify; /*文字两侧对其，对最后一行无效*/
+}
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
 p {
-    line-height: 1.8;
-    color: #333;
+    margin: 25px 0 25px 0;
 }
 
 blockquote {
     padding: 1px 20px;
     margin: 22px 0;
     border-left: 3px solid #c6d5e1;
-    font: italic 700 15px 'Domine', Serif;
     background-color: #f7f7f7;
 }
 
@@ -54,12 +55,11 @@ td {
 }
 
 article td, article th {
-    padding: 10px;
+    padding: 6px;
     border-bottom: 1px solid #ddd;
     border-right: 1px solid #ddd;
     text-align: left;
 }
-
 
 ul, ol {
     margin: 16px 0 0 32px;
@@ -81,23 +81,6 @@ hr {
     background-color: var(--theme-color);
 }
 
-.article-meta {
-    margin-top: 10px;
-    display: flex;
-    font-size: 12px;
-    color: #999;
-}
-
-.article-meta img {
-    width: 14px;
-    height: 14px;
-    margin-right: 5px;
-}
-
-.article-meta time {
-    margin-right: 20px;
-}
-
 .video-container {
     margin: auto;
     width: 100%;
@@ -114,5 +97,23 @@ hr {
     font-size: 1rem;
     text-indent: 0;
     text-rendering: auto;
+}
+
+.article-meta {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #999;
+}
+
+.article-meta img {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+
+.article-meta time {
+    margin-right: 20px;
 }
 

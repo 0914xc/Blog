@@ -1,16 +1,38 @@
 #导航栏
 menu:
   Home: /
+  Archive: /archives
   About: /about
+  Link: /link
 
 # 站点微缩图
 favicon: /images/cactus.png
 
 # 头像
-avator: https://cdn.jsdelivr.net/gh/wxc0914/image/a3625c26bc8735174100f6d487763b06.png
+avator: https://avatars.githubusercontent.com/u/32607917?v=4
+# 一言
+hitokoto: 我们都是阴沟里的虫子，但总还是得有人仰望星空。
 
+# 导航栏背景图片
+backgroundUrl: https://cdnb.artstation.com/p/assets/images/images/025/423/333/medium/sylvain-sarrailh-yoshicollines.jpg?1585749317
+# 主题色
+themeColor: tomato
+
+# 博客托管仓库
+repo: https://github.com/0914xc/0914xc.github.io
 # ICP备案号
 icp: 蜀ICP备2021014778号-1
 
-# 主题色
-site-icon: "/images/cactus.png"
+# 友链
+link:
+  - name: WeiXiaochen's blog
+    avator: https://cdn.jsdelivr.net/gh/wxc0914/image/a3625c26bc8735174100f6d487763b06.png
+    site: https://blog.weixiaochen.cn/
+    intro: 我们都是阴沟里的虫子，但总还是得有人仰望星空
+
+
+# 评论 https://utteranc.es/
+utterances:
+  enable: true
+  repo: 0914xc/0914xc.github.io
+  theme: github-light

@@ -1,5 +1,5 @@
 <div class="index">
-    <% site.posts.forEach(function(post){ %>
+    <% page.posts.forEach(function(post){ %>
         <article>
             <% if (post.title.length === 0) {
                 post.title = "[文章没有标题]"
@@ -7,10 +7,10 @@
             <a class="article-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
             <div class="article-content"><%- truncate(strip_html(post.content), {length: 150}) %></div>
             <div class="article-meta">
-                <img src="/images/calendar.png" alt="">
+                <i class="iconfont icon-calendar"></i>
                 <time><%- date(post.date, 'YYYY-MM-DD') %></time>
                 <% if (post.categories.length > 0) { %>
-                    <img src="/images/tags.png" alt="">
+                    <i class="iconfont icon-tag"></i>
                     <div class="category">
                         <% post.categories.forEach(function (category) { %>
                             <span><%= category.name %></span>
@@ -20,5 +20,33 @@
             </div>
         </article>
     <% }) %>
+
+    <div class="pagination">
+        <% if (page.prev !== 0) { %>
+            <a href="<%- url_for(page.prev_link) %>"><span class="pagination-prev"><i
+                            class="iconfont icon-arrow-left"></i></span></a>
+            <% if (page.prev > 1) { %>
+                <a href="<%- url_for('/') %>"><span>1</span></a>
+            <% } %>
+            <% if (page.prev > 2) { %>
+                <span class="pagination-dot">...</span>
+            <% } %>
+            <a href="<%- url_for(page.prev_link) %>"><span><%= page.prev %></span></a>
+        <% } %>
+        <span class="pagination-cuurent">
+            <%= page.current %>
+        </span>
+        <% if (page.next !== 0) { %>
+            <a href="<%= url_for(page.next_link) %>"><span><%= page.next %></span></a>
+            <% if (page.next + 1 < page.total ) { %>
+                <span class="pagination-dot">...</span>
+            <% } %>
+            <% if (page.next < page.total ) { %>
+                <a href="<%- url_for('about/' + page.total) %>"><span><%= page.total %></span></a>
+            <% } %>
+            <a href="<%= url_for(page.next_link) %>"><span class="pagination-next"><i
+                            class="iconfont icon-arrow-right"></i></span></a>
+        <% } %>
+    </div>
 </div>
 

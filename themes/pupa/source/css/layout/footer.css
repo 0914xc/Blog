@@ -1,24 +1,34 @@
 footer {
     margin-top: 20px;
-    background: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
 }
-footer span {
+
+footer .utterances {
+    max-width: 100%;
+    background: #fff;
+}
+
+footer .site-intro {
+    margin-top: 20px;
+    padding: 25px;
+    background: #fff;
+}
+
+footer .site-intro {
+    text-align: center;
+}
+footer .site-intro span {
     font-size: 13px;
-    color: #555;
 }
-footer span:after {
+footer .site-intro span:after {
     content: '，';
 }
-footer span:last-child:after {
+footer .site-intro span:last-child:after {
     content: '';
 }
-footer span a {
-    border-bottom: 1px solid #fff;
+footer .site-intro span a {
+    border-bottom: 1px solid #999;
 }
-footer span a:hover {
+footer .site-intro span a:hover {
     border-color: var(--theme-color);
+    transition: .3s;
 }
