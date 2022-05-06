@@ -4,9 +4,9 @@
             <% if (post.title.length === 0) {
                 post.title = "[文章没有标题]"
             } %>
-            <a class="article-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
-            <div class="article-content"><%- truncate(strip_html(post.content), {length: 150}) %></div>
-            <div class="article-meta">
+            <a class="post-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+            <div class="post-content"><%- truncate(strip_html(post.content), {length: 150}) %></div>
+            <div class="post-meta">
                 <i class="iconfont icon-calendar"></i>
                 <time><%- date(post.date, 'YYYY-MM-DD') %></time>
                 <% if (post.categories.length > 0) { %>
@@ -42,7 +42,7 @@
                 <span class="pagination-dot">...</span>
             <% } %>
             <% if (page.next < page.total ) { %>
-                <a href="<%- url_for('about/' + page.total) %>"><span><%= page.total %></span></a>
+                <a href="<%- url_for('page/' + page.total) %>"><span><%= page.total %></span></a>
             <% } %>
             <a href="<%= url_for(page.next_link) %>"><span class="pagination-next"><i
                             class="iconfont icon-arrow-right"></i></span></a>

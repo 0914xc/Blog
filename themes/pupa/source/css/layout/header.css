@@ -18,14 +18,6 @@ header {
     object-fit: cover;
 }
 
-header .intro {
-    position: absolute;
-    bottom: 0;
-    padding: 25px;
-    display: flex;
-    z-index: 2;
-}
-
 header .header-background-filter {
     position: absolute;
     top: 0;
@@ -42,6 +34,14 @@ header .header-background-filter::before {
     width: 100%;
     z-index: 0;
     background: -webkit-linear-gradient(bottom, #fff, rgba(255, 255, 255, 0) 100%);
+}
+
+header .intro {
+    position: absolute;
+    bottom: 0;
+    padding: 25px;
+    display: flex;
+    z-index: 2;
 }
 
 header .intro section {

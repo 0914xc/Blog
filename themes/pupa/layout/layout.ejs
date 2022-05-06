@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no"/>
     <meta name="keywords" content="<%= config.keywords %>">
     <meta name="description" content="<%= config.description %>"/>
+    <%- meta_generator() %>
+    <%- favicon_tag(theme.favicon) %>
+
     <!-- 引入谷歌字体-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
-    <%- meta_generator() %>
-    <%- favicon_tag(theme.favicon) %>
     <%- css('/css/theme') %>
 </head>
 <body>
@@ -42,7 +43,7 @@
         <%- body %>
     </main>
     <footer>
-        <% if (theme.utterances.enable === true && (is_post() || (is_page() && page.path === 'link/index.html'))) { %>
+        <% if (theme.utterances.enable === true && (is_post() || (is_page()))) { %>
             <script src="https://utteranc.es/client.js"
                     repo="<%- theme.utterances.repo %>"
                     issue-term="pathname"

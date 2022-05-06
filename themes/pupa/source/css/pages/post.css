@@ -1,17 +1,127 @@
+article {
+    text-align: justify; /*文字两侧对其，对最后一行无效*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+p {
+    margin: 25px 0 25px 0;
+}
+
+blockquote {
+    padding: 1px 20px;
+    margin: 22px 0;
+    border-left: 3px solid #c6d5e1;
+    background-color: #f7f7f7;
+}
+
+img {
+    max-width: 100%;
+}
+
+table {
+    margin: 20px 0;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    table-layout: fixed;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+thead {
+    font-size: 14px;
+    color: #909399;
+    font-weight: 600;
+}
+
+tbody {
+    font-size: 14px;
+}
+
+article th {
+    font-weight: 600;
+}
+
+td {
+    border-bottom-width: 1px;
+}
+
+article td, article th {
+    padding: 6px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    text-align: left;
+}
+
+ul, ol {
+    margin: 16px 0 0 32px;
+    padding: 0;
+}
+
+li {
+    padding: 0 0 0 10px;
+    margin: 0;
+    list-style: square;
+    line-height: 2.2;
+}
+
+hr {
+    width: 70%;
+    height: 2px;
+    margin: 30px auto;
+    border: 0;
+    background-color: var(--theme-color);
+}
+
+.video-container {
+    margin: auto;
+    width: 100%;
+    height: 350px;
+}
+
+.video-container > iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.post-meta {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #999;
+}
+
+.post-meta img {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+
+.post-meta time {
+    margin-right: 20px;
+}
+
 .post {
 }
 
-.article-header {
+.post-header {
     padding: 25px 25px 0;
 }
 
-.article-meta-box {
+.post-meta-box {
     position: relative;
     padding-bottom: 16px;
     border-bottom: 1px solid #dee2e6;
 }
 
-.article-meta-box:after {
+.post-meta-box:after {
     content: "";
     position: absolute;
     left: 0;
@@ -21,7 +131,7 @@
     background-color: var(--theme-color) !important;
 }
 
-.post .article-content {
+.post .post-content {
     padding: 0 25px;
 }
 
@@ -32,4 +142,39 @@
 .post a:hover {
     border-color: var(--theme-color);
     transition: .3s;
+}
+
+/*文章页分页*/
+.post-pagination {
+    border-top: 1px solid #f1f2f4;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.post-pagination a {
+    display: flex;
+    width: calc(50% - 25px);
+    align-items: center;
+    border-bottom: none !important;
+    color: #999;
+}
+
+.post-pagination a:hover {
+    color: #555;
+    background: #f1f2f4;
+    transition: .3s;
+}
+
+.post-pagination a.prev {
+    float: left;
+    justify-content: left;
+    text-align: left;
+    padding: 14px 0 14px 25px;
+}
+
+.post-pagination a.next {
+    float: right;
+    justify-content: right;
+    text-align: right;
+    padding: 14px 25px 14px 0;
 }

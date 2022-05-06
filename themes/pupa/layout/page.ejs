@@ -1,21 +1,3 @@
 <article class="page">
-    <% if (page.path === 'link/index.html') { %>
-        <div class="link">
-            <% theme.link.forEach(function (item) { %>
-                <div class="link-card">
-                    <div class="link-avator">
-                        <div class="link-avator-background" style="background: url('<%= item.avator %>')"></div>
-                        <img src="<%= item.avator %>" alt="link-avator">
-                    </div>
-                    <a class="link-site" href="<%= item.site %>">
-                        <h3 class="link-name"><%= item.name %></h3>
-                        <div class="link-intro"><%= item.intro %></div>
-                    </a>
-                </div>
-            <% }) %>
-        </div>
-    <% } else { %>
-        <%- page.content %>
-    <% } %>
-
+    <%- page.content %>
 </article>

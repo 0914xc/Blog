@@ -3,18 +3,17 @@ menu:
   Home: /
   Archive: /archives
   About: /about
-  Link: /link
 
 # 站点微缩图
-favicon: /images/cactus.png
+favicon: /images/favicon.ico
 
 # 头像
-avator: https://avatars.githubusercontent.com/u/32607917?v=4
+avator: https://cdn.jsdelivr.net/gh/wxc0914/image/4956b11eec481f0d2f6887526085e169.jpg
 # 一言
 hitokoto: 我们都是阴沟里的虫子，但总还是得有人仰望星空。
 
 # 导航栏背景图片
-backgroundUrl: https://cdnb.artstation.com/p/assets/images/images/025/423/333/medium/sylvain-sarrailh-yoshicollines.jpg?1585749317
+backgroundUrl: https://cdn.jsdelivr.net/gh/wxc0914/image/342211649c34edaa0fef32c4eaa647c1.jpg
 # 主题色
 themeColor: tomato
 
@@ -22,14 +21,6 @@ themeColor: tomato
 repo: https://github.com/0914xc/0914xc.github.io
 # ICP备案号
 icp: 蜀ICP备2021014778号-1
-
-# 友链
-link:
-  - name: WeiXiaochen's blog
-    avator: https://cdn.jsdelivr.net/gh/wxc0914/image/a3625c26bc8735174100f6d487763b06.png
-    site: https://blog.weixiaochen.cn/
-    intro: 我们都是阴沟里的虫子，但总还是得有人仰望星空
-
 
 # 评论 https://utteranc.es/
 utterances:

@@ -1,0 +1,29 @@
+html {
+    font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+body {
+    font-size: 14px;
+    line-height: 2;
+    color: #555;
+}
+
+.background {
+    background: var(--body-background);
+    background-size: cover;
+    filter: blur(30px);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.container {
+    background: #f9f9f9;
+    max-width: 780px;
+    margin: 60px auto 100px;
+    box-shadow: 0 0 6px 4px rgba(rgb(0, 0, 0), 0.05);
+}
