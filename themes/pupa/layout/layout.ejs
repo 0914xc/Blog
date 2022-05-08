@@ -12,7 +12,7 @@
     <!-- 引入谷歌字体-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monda&family=Roboto+Mono&display=swap" rel="stylesheet">
     <%- css('/css/theme') %>
 </head>
 <body>
@@ -59,9 +59,12 @@
             <span><%= theme.icp %></span>
         </div>
     </footer>
+    <div id="backTop">
+        <img src="/images/scroll_to_top.png" alt="回到顶部">
+        <div class="tip">回到顶部</div>
+    </div>
 </div>
 
-<%- js('https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js') %>
 <%- js('/js/theme.js') %>
 </body>
 </html>

@@ -1,11 +1,7 @@
 ---
 title: Hello WeiXiaochen's Blog
 date: 2021-05-30 14:51:13
-categories:
-- 生活杂记
-tags:
-- 生活琐事
-- 个人总结
+categories: 生活杂记
 ---
 
 时隔四年，重拾博客；心有所感，却难以言表。

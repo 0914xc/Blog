@@ -1,16 +1,15 @@
 footer {
     margin-top: 20px;
+    background: #fff;
 }
 
 footer .utterances {
-    max-width: 100%;
-    background: #fff;
+    max-width: calc(100% - 50px);
 }
 
 footer .site-intro {
     margin-top: 20px;
     padding: 25px;
-    background: #fff;
 }
 
 footer .site-intro {

@@ -1,5 +1,6 @@
 article {
     text-align: justify; /*文字两侧对其，对最后一行无效*/
+    word-break: break-all;
 }
 
 h1, h2, h3, h4, h5, h6 {

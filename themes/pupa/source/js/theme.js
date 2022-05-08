@@ -9,3 +9,23 @@ for (let i = 0; i < input.length; i++) {
         input[i].parentElement.style.cssText += 'list-style: none; margin-left: -30px'
     }
 }
+
+// 顶部元素，取HTML
+const Top = document.getElementsByTagName('html')[0];
+
+// 回到顶部按钮
+const backTop = document.getElementById('backTop');
+
+// 回到顶部
+backTop.addEventListener('click', function(e) {
+    Top.scrollIntoView({  behavior: 'smooth'})
+})
+
+// 控制回到顶部按钮的显示与隐藏
+window.onscroll = function () {
+    if (document.documentElement.scrollTop + document.body.scrollTop > 800) {
+        backTop.style.visibility = "visible";
+    } else {
+        backTop.style.visibility = "hidden";
+    }
+}

@@ -17,6 +17,8 @@ img {
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
     -ms-interpolation-mode: nearest-neighbor;
+    user-select: none; /*图片禁止鼠标选中*/
+    -moz-user-select: none;
 }
 
 /*文字超过一行省略号显示*/
@@ -25,4 +27,20 @@ img {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+/*更改鼠标选中样式*/
+::selection {
+    background-color: var(--theme-color);
+    color: #fff;
+}
+
+::-moz-selection {
+    background-color: var(--theme-color);
+    color: #fff;
+}
+
+/*平滑滚动*/
+html, body {
+    scroll-behavior: smooth;
 }

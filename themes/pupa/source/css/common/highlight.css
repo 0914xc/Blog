@@ -3,8 +3,8 @@
 }
 
 .highlight .line {
-    font-size: 14px !important;
-    height: 20px;
+    font-size: 13px !important;
+    height: 25px;
 }
 
 .highlight, pre {
@@ -14,7 +14,7 @@
     font-size: 13px;
     color: #4d4d4c;
     background: #f7f7f7;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 figure {
@@ -54,7 +54,9 @@ figure {
 }
 
 code {
+    margin: 0 2px;
     padding: 2px 4px;
+    word-break: break-word;
     color: #555;
     background-color: #eee;
     border-radius: 3px;
@@ -62,7 +64,7 @@ code {
 }
 
 code, pre {
-    font-family: consolas,Menlo,"PingFang SC","Microsoft YaHei",monospace;
+    font-family: 'Roboto Mono', consolas, monospace;
 }
 
 .highlight td {
