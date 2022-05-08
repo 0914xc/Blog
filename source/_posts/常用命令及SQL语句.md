@@ -1,10 +1,12 @@
 ---
 title: 常用命令及SQL语句
 date: 2022-05-07 20:53:14
-categories: 数据库
+categories: MySQL
 ---
+
 数据库相关
-```plsql
+
+```sql
 # 创建数据库
 create database if not exits blog;
 
@@ -31,8 +33,7 @@ truncate table article;
 ```
 
 表相关
-```plsql
-
+```sql
 # 添加列
 alter table article add column `author` varchar(5) not null default '' after `title`;
 # 修改列名（重建表）
