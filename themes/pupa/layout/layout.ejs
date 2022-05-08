@@ -43,12 +43,20 @@
         <%- body %>
     </main>
     <footer>
-        <% if (theme.utterances.enable === true && (is_post() || (is_page()))) { %>
-            <script src="https://utteranc.es/client.js"
-                    repo="<%- theme.utterances.repo %>"
-                    issue-term="pathname"
-                    theme="<%- theme.utterances.theme %>"
-                    crossorigin="anonymous"
+        <% if (theme.giscus.enable === true && (is_post() || (is_page()))) { %>
+            <script src="https://giscus.app/client.js"
+                    data-repo="<%= theme.giscus.repo%>"
+                    data-repo-id="<%= theme.giscus.repo_id%>"
+                    data-category="<%= theme.giscus.category%>"
+                    data-category-id="<%= theme.giscus.category_id%>"
+                    data-mapping="<%= theme.giscus.mapping%>"
+                    data-reactions-enabled="<%= theme.giscus.reactions_enabled%>"
+                    data-emit-metadata="<%= theme.giscus.emit_metadata%>"
+                    data-input-position="<%= theme.giscus.input_position%>"
+                    data-theme="<%= theme.giscus.theme%>"
+                    data-lang="<%= theme.giscus.lang%>"
+                    data-loading="<%= theme.giscus.loading%>"
+                    crossorigin="<%= theme.giscus.crossorigin%>"
                     async>
             </script>
         <% } %>

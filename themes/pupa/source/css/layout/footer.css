@@ -3,8 +3,10 @@ footer {
     background: #fff;
 }
 
-footer .utterances {
+footer .giscus {
     max-width: calc(100% - 50px);
+    margin: auto;
+    padding-top: 20px;
 }
 
 footer .site-intro {

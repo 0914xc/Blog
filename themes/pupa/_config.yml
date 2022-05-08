@@ -22,8 +22,18 @@ repo: https://github.com/0914xc/0914xc.github.io
 # ICP备案号
 icp: 蜀ICP备2021014778号-1
 
-# 评论 https://utteranc.es/
-utterances:
+# 评论 https://giscus.app/zh-CN
+giscus:
   enable: true
   repo: 0914xc/0914xc.github.io
-  theme: github-light
+  repo_id: MDEwOlJlcG9zaXRvcnkzNjUxNTI5MTg=
+  category: Announcements
+  category_id: DIC_kwDOFcPKls4CO_hE
+  mapping: pathname
+  reactions_enabled: 1
+  emit_metadata: 0
+  input_position: top
+  theme: light
+  lang: zh-CN
+  loading: lazy
+  crossorigin: anonymous
