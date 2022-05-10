@@ -25,10 +25,10 @@ icp: 蜀ICP备2021014778号-1
 # 评论 https://giscus.app/zh-CN
 giscus:
   enable: true
-  repo: 0914xc/0914xc.github.io
-  repo_id: MDEwOlJlcG9zaXRvcnkzNjUxNTI5MTg=
+  repo: 0914xc/weixiaochen-blog
+  repo_id: R_kgDOHKKVwg
   category: Announcements
-  category_id: DIC_kwDOFcPKls4CO_hE
+  category_id: DIC_kwDOHKKVws4CPB45
   mapping: pathname
   reactions_enabled: 1
   emit_metadata: 0
