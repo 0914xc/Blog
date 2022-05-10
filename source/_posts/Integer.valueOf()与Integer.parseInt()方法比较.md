@@ -11,6 +11,7 @@ int a = Integer.valueOf("10");
 ```
 
 首先这段代码是可以正常运行的，但是Idea却给出了提示：
+
 ![Image](https://cdn.jsdelivr.net/gh/wxc0914/image/425bf78f92b476ebd349ebd0e7e1acae.png)
 
 boxing翻译过来是装箱的意思，换句话说，在这里进行了重复的装箱操作（注：自动拆箱、装箱是JDK1.5以后的一个新特性）。

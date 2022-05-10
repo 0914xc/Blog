@@ -1,5 +1,5 @@
 ---
-title: Arrays.asList()使用需要注意的坑
+title: Arrays.asList()你真的了解吗？
 date: 2022-05-07 20:28:18
 categories: Java
 ---
@@ -18,7 +18,9 @@ public static <T> List<T> asList(T... a) {
 }
 ```
 
-那为什么还需要在外面再套一层new ArrayList<>()呢？原因是因为这个ArrayList是Arrays类内部的私有静态类，并不是java.util.ArrayList。
+确实是返回了一个ArrayList。
+
+那为什么还需要在外面再套一层new ArrayList<>()呢？**原因是因为这个ArrayList是Arrays类内部的私有静态类，并不是java.util.ArrayList**。
 
 这个类的源码也不多，可以一起看下：
 
@@ -121,5 +123,4 @@ private static class ArrayList<E> extends AbstractList<E> implements RandomAcces
 
 所以也不难理解文章开头出现的代码了，目的就是为了构造一个可变长度的ArrayList。
 
-思考？
-Arrays为什么要有这样的设计？直接用java.util.ArrayList不好吗？
+> 思考，Arrays为什么要有这样的设计？直接用java.util.ArrayList不好吗？

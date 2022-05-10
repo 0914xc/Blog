@@ -6,9 +6,9 @@ categories: 生活杂记
 
 时隔四年，重拾博客；心有所感，却难以言表。
 
-四月初开始用[Hexo](https://hexo.io/zh-cn/)重新搭建博客，编写完整个[主题](https://github.com/wxc0914/wxc0914.github.io)并且部署在[GitHub](https://github.com/wxc0914)上，也就花了差不多半个月的时间。但是这第一篇文章，却一直拖到了今天。
+四月初开始用[Hexo](https://hexo.io/zh-cn/)重新搭建博客，编写完整个[主题『Pupa』](https://github.com/0914xc/hexo-theme-pupa)并且部署在[GitHub](https://github.com/wxc0914)上，也就花了差不多半个月的时间。但是这第一篇文章，却一直拖到了今天。
 
-主要是这两个月都处于找工作的焦虑之中，难以静下心来，去写下一篇文章。
+主要是这两个月都处于找工作的焦虑之中，难以静下心去写一篇文章。
 
 ## 一、大学四年
 
