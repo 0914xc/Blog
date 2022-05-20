@@ -1,13 +1,8 @@
 a {
+    color: #3377BB;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
-    color: #555
-}
-
-a:hover {
-    color: var(--theme-color);
-    transition: .3s;
 }
 
 /*修正图片缩小后变模糊的问题*/
@@ -27,17 +22,6 @@ img {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-/*更改鼠标选中样式*/
-::selection {
-    background-color: var(--theme-color);
-    color: #fff;
-}
-
-::-moz-selection {
-    background-color: var(--theme-color);
-    color: #fff;
 }
 
 /*平滑滚动*/

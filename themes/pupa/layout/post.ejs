@@ -1,37 +1,23 @@
-<article class="post">
-    <% if (page.title.length === 0) {
-        page.title = "[文章没有标题]"
-    } %>
-    <div class="post-header">
-        <h1 class="title"><%= page.title %></h1>
-        <div class="post-meta-box">
-            <div class="post-meta">
-                <i class="iconfont icon-calendar"></i>
-                <time><%- date(page.date, 'YYYY-MM-DD') %></time>
-                <% if (page.categories.length > 0) { %>
-                    <i class="iconfont icon-tag"></i>
-                    <div class="category">
-                        <% page.categories.forEach(function (category) { %>
-                            <span><%= category.name %></span>
-                        <% }) %>
-                    </div>
-                <% } %>
-            </div>
-        </div>
-    </div>
-    <div class="post-content"><%- page.content %></div>
-    <div class="post-pagination">
-        <% if (page.prev != null) { %>
-            <a class="prev" href="<%- url_for(page.prev.path)%>">
-                <i class="iconfont icon-arrow-left"></i>
-                <span class="text-overflow-hidden"><%- page.prev.title %></span>
-            </a>
-        <% } %>
-        <% if (page.next != null) { %>
-            <a class="next" href="<%- url_for(page.next.path)%>">
-                <span class="text-overflow-hidden"><%- page.next.title %></span>
-                <i class="iconfont icon-arrow-right"></i>
-            </a>
-        <% } %>
-    </div>
+<article>
+    <% if (page.title.length === 0) page.title = "[No Title]" %>
+    <h1><%= page.title %></h1>
+    <time style="font-size: 14px; font-style: italic; color: #aaa"><%- date(page.date, 'LL') %></time>
+    <%- page.content %>
 </article>
+<% if (theme.giscus.enable) { %>
+    <script src="https://giscus.app/client.js"
+            data-repo="<%= theme.giscus.repo %>"
+            data-repo-id="<%= theme.giscus.repo_id %>"
+            data-category="<%= theme.giscus.category %>"
+            data-category-id="<%= theme.giscus.category_id %>"
+            data-mapping="<%= theme.giscus.mapping %>"
+            data-reactions-enabled="<%= theme.giscus.reactions_enabled %>"
+            data-emit-metadata="<%= theme.giscus.emit_metadata %>"
+            data-input-position="<%= theme.giscus.input_position %>"
+            data-theme="<%= theme.giscus.theme %>"
+            data-lang="<%= theme.giscus.lang %>"
+            data-loading="<%= theme.giscus.loading %>"
+            crossorigin="<%= theme.giscus.crossorigin %>"
+            async>
+    </script>
+<% } %>

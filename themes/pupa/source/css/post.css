@@ -1,0 +1,87 @@
+article {
+    text-align: justify; /*文字两侧对其，对最后一行无效*/
+    word-break: break-all;
+}
+
+p {
+    margin: 25px 0 25px 0;
+}
+
+blockquote {
+    padding: 1px 20px;
+    margin: 22px 0;
+    border-left: 3px solid #c6d5e1;
+    background-color: #f7f7f7;
+}
+
+img {
+    max-width: 100%;
+}
+
+table {
+    margin: 20px 0;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    table-layout: fixed;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+thead {
+    font-size: 14px;
+    color: #909399;
+    font-weight: 600;
+}
+
+tbody {
+    font-size: 14px;
+}
+
+article th {
+    font-weight: 600;
+}
+
+td {
+    border-bottom-width: 1px;
+}
+
+article td, article th {
+    padding: 6px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    text-align: left;
+}
+
+ul, ol {
+    margin: 16px 0 0 32px;
+    padding: 0;
+}
+
+li {
+    padding: 0 0 0 10px;
+    margin: 0;
+    list-style: square;
+    line-height: 2.2;
+}
+
+hr {
+    height: 2px;
+    margin: 30px auto;
+    border: 0;
+    background: #000;
+}
+
+.video-container {
+    margin: auto;
+    width: 100%;
+    height: 350px;
+}
+
+.video-container > iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}

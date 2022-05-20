@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: WeiXiaochen's Blog
+title: 魏小宸的博客
 subtitle: ''
-description: Java后端 算法 造轮子
-keywords: WeiXiaochen's Blog 魏小宸的博客
-author: WeiXiaochen
+description:
+keywords:
+author: 魏小宸
 language: zh-CN
 timezone: ''
 

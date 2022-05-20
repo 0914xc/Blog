@@ -1,26 +1,5 @@
-#导航栏
-menu:
-  Home: /
-  Archive: /archives
-  About: /about
-
 # 站点微缩图
 favicon: /images/favicon.ico
-
-# 头像
-avator: https://cdn.jsdelivr.net/gh/wxc0914/image/4956b11eec481f0d2f6887526085e169.jpg
-# 一言
-hitokoto: 我们都是阴沟里的虫子，但总还是得有人仰望星空。
-
-# 导航栏背景图片
-backgroundUrl: https://cdn.jsdelivr.net/gh/wxc0914/image/342211649c34edaa0fef32c4eaa647c1.jpg
-# 主题色
-themeColor: tomato
-
-# 博客托管仓库
-repo: https://github.com/0914xc/0914xc.github.io
-# ICP备案号
-icp: 蜀ICP备2021014778号-1
 
 # 评论 https://giscus.app/zh-CN
 giscus:
